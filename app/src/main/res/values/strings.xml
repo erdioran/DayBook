@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">AAAAAA</string>
+    <string name="choose_from_gallery">Galeriden seç</string>
+    <string name="take_a_photo">Fotoğraf çek</string>
+    <string name="sonuclar">Sonuçlar</string>
+    <string name="ekle">Ekle</string>
+    <string name="title_home">Ana Sayfa</string>
+    <string name="incele">İncele</string>
+    <string name="refresh">Yenile</string>
+    <string name="contact_us">Bize Ulaşın</string>
+    <string name="settings">Ayarlar</string>
+    <string name="todo">TODO</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+
+
+    <string name="other">Diğer</string>
+    <string name="contact_form_name">Adınız</string>
+    <string name="contact_form_email">E-Mail</string>
+    <string name="contact_form_subject">Konu</string>
+    <string name="contact_form_message">Mesaj</string>
+    <string name="contact_form_button">Gönder</string>
+
+    <string name="day_mode">Gündüz Modu</string>
+    <string name="night_mode">Gece Modu</string>
+    <string name="auto_theme_mode">Oto Gündüz/Gece Modu</string>
+    <string name="close">Kapalı</string>
+    <string name="open">Açık</string>
+
+
+    <string name="facebook_app_id">120048898894902</string>
+    <string name="fb_login_protocol_scheme">fb120048898894902</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_tracking">Map</string>
+    <string name="log_out">Log out</string>
+    <string name="username">userName</string>
+    <string name="password">Password</string>
+    <string name="orRegister">Üye OL</string>
+    <string name="orLogin">Ya da giriş yap</string>
+    <string name="user_name">Kullanıcı Adı</string>
+    <string name="user_pass">Şifreniz</string>
+    <string name="login">Giriş</string>
+    <string name="facebooklogin">Facebook ile devam et</string>
+    <string name="todo1">TODO</string>
+
+
+</resources>

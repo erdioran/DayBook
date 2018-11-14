@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "852878773131",
+    "firebase_url": "https://daybook-erdioran.firebaseio.com",
+    "project_id": "daybook-erdioran",
+    "storage_bucket": "daybook-erdioran.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852878773131:android:11daffc33087426b",
+        "android_client_info": {
+          "package_name": "com.erdioran.daybook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852878773131-tas8heirlm7rpe8vgeatnko4uuva15nl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWHJVceJtYRlk4yTYQyRDgzOoSZyd3Cdk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
