@@ -74,7 +74,7 @@
 
 
         <activity
-            android:name=".StartLogin.StartActivity"
+            android:name=".SplshScreenActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
@@ -84,6 +84,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".StartLogin.StartActivity"
+            android:configChanges="orientation|keyboardHidden" />
 
         <activity
             android:name=".StartLogin.RegisterActivity"

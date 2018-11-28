@@ -43,11 +43,11 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
 
 
     private EditText editTextUserName, editTextUserPassword;
-    private Button buttonLogin;
-    private TextView txtRegister, txtUser, txtEmail;
+    private Button buttonLogin,buttonRegister;
+    private TextView txtUser, txtEmail;
     private ImageView imgProfile;
     private String userName, userPassword;
-    private LoginButton logoutButton, loginButton;
+    private LoginButton loginButton;
 
     private CallbackManager callbackManager;
 
@@ -72,7 +72,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         editTextUserName = (EditText) findViewById(R.id.editTextUserName);
         editTextUserPassword = (EditText) findViewById(R.id.editTextUserPassword);
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
-        txtRegister = (TextView) findViewById(R.id.txtRegister);
+        buttonRegister = (Button) findViewById(R.id.buttonRegister);
 
         mAuth = FirebaseAuth.getInstance();
         firebaseUser = mAuth.getCurrentUser(); // authenticated user
@@ -101,7 +101,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
-        txtRegister.setOnClickListener(new View.OnClickListener() {
+        buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StartActivity.this, RegisterActivity.class);
@@ -134,8 +134,6 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         callbackManager = CallbackManager.Factory.create();
 
         loginButton = (LoginButton) findViewById(R.id.btnFacebookIn);
-        logoutButton = (LoginButton) findViewById(R.id.btnFacebookOut);
-        logoutButton.setOnClickListener(this);
 
 
         loginButton.setReadPermissions("email", "public_profile");//user_status, publish_actions..
@@ -169,14 +167,14 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                     txtUser.setText(userName);
                     Picasso.with(StartActivity.this).load(user.getPhotoUrl()).into(imgProfile);
                     loginButton.setVisibility(View.GONE);
-                    logoutButton.setVisibility(View.VISIBLE);
+
                 } else {
                     Log.d("TG", "SIGNED OUT");
                     //             txtEmail.setText("");
                     //          txtUser.setText("");
                     //        imgProfile.setImageBitmap(null);
                     loginButton.setVisibility(View.VISIBLE);
-                    logoutButton.setVisibility(View.GONE);
+
                 }
             }
         };

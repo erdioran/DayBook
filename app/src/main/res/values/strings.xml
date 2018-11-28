@@ -37,13 +37,14 @@
     <string name="log_out">Log out</string>
     <string name="username">userName</string>
     <string name="password">Password</string>
-    <string name="orRegister">Üye OL</string>
+    <string name="orRegister">Üye Ol</string>
     <string name="orLogin">Ya da giriş yap</string>
     <string name="user_name">Kullanıcı Adı</string>
     <string name="user_pass">Şifreniz</string>
     <string name="login">Giriş</string>
     <string name="facebooklogin">Facebook ile devam et</string>
     <string name="todo1">TODO</string>
+    <string name="otherLogin">Diğer Giriş Seçenekleri</string>
 
 
 </resources>

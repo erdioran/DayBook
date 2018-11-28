@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView3"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="11"
+        android:weightSum="1"
         tools:ignore="ScrollViewSize">
 
         <LinearLayout
@@ -26,7 +26,7 @@
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="40dp"
-            android:layout_weight="4"
+            android:layout_weight="0.35"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="3">
@@ -50,8 +50,85 @@
             android:id="@+id/linLay2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_weight="0.40"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextUserName"
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0.35"
+                    android:hint="@string/user_name"
+                    android:inputType="textEmailAddress"
+                    tools:ignore="NestedWeights" />
+
+                <EditText
+                    android:id="@+id/editTextUserPassword"
+                    android:layout_width="150dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.35"
+                    android:hint="@string/user_pass"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.20"
+                    android:background="#C8084FF5"
+                    android:text="@string/login"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.20"
+                    android:background="#C8084FF5"
+                    android:text="@string/orRegister"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linLay3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
             android:layout_marginBottom="10dp"
-            android:layout_weight="2"
+            android:layout_weight="0.35"
             android:orientation="vertical"
             android:weightSum="1">
 
@@ -61,8 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_weight="0.33"
+                android:layout_weight="0.25"
                 android:text="@string/facebooklogin"
                 tools:ignore="NestedWeights" />
 
@@ -72,111 +148,35 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:layout_weight="0.33" />
+                android:layout_weight="0.25"
+                android:text="@string/facebooklogin" />
 
-            <TextView
-                android:id="@id/textView"
+            <Button
+                android:id="@+id/instagram"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:layout_weight="0.33"
-                android:text="@string/orLogin"
-                android:textAlignment="center" />
-        </LinearLayout>
+                android:layout_weight="0.25"
+                android:text="@string/facebooklogin" />
 
-        <LinearLayout
-            android:id="@+id/linLay3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="4"
-            android:orientation="vertical"
-            android:weightSum="4">
-
-            <EditText
-                android:id="@+id/editTextUserName"
-                android:layout_width="150dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-
-                android:layout_weight="1"
-                android:hint="@string/user_name"
-                android:inputType="textEmailAddress" />
-
-            <EditText
-                android:id="@+id/editTextUserPassword"
-                android:layout_width="150dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:hint="@string/user_pass"
-                android:inputType="textPassword" />
-
-            <Button
-                android:id="@+id/buttonLogin"
-                android:layout_width="150dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:background="#C8084FF5"
-                android:text="@string/login"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/txtRegister"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                android:text="@string/orRegister"
-                android:textAlignment="center"
-                android:textColor="#000" />
 
         </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="1dp"
-            android:layout_height="1dp"
-            android:layout_weight="1">
-
-            <com.facebook.login.widget.LoginButton
-                android:id="@+id/btnFacebookOut"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="49dp"
-                android:layout_marginTop="30dp"
-                android:text="@string/log_out" />
-
-
-            <ImageView
-                android:id="@+id/imgProfile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/todo" />
-
-            <TextView
-                android:id="@+id/txtEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/password" />
-
-            <TextView
-                android:id="@+id/txtUser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/username" />
-        </LinearLayout>
     </LinearLayout>
 
 
-</ScrollView>
+</android.support.constraint.ConstraintLayout>
 
 
+    <!--<LinearLayout--><!--android:layout_width="1dp"--><!--android:layout_height="1dp"--><!--android:layout_weight="1">-->
+
+    <!--<com.facebook.login.widget.LoginButton--><!--android:id="@+id/btnFacebookOut"--><!--android:layout_width="0dp"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="49dp"--><!--android:layout_marginTop="30dp"--><!--android:text="@string/log_out" />-->
+
+
+    <!--<ImageView--><!--android:id="@+id/imgProfile"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:contentDescription="@string/todo" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtEmail"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="@string/password" />-->
+
+    <!--<TextView--><!--android:id="@+id/txtUser"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="@string/username" />--><!--</LinearLayout>-->
