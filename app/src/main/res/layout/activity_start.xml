@@ -26,21 +26,40 @@
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="40dp"
-            android:layout_weight="0.35"
+            android:layout_weight="0.30"
             android:gravity="center"
             android:orientation="horizontal"
-            android:weightSum="3">
+            android:weightSum="1">
 
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@mipmap/ic_launcher"
-                android:contentDescription="@string/todo1"
                 tools:ignore="NestedWeights" />
+
+            <LinearLayout
+                android:layout_weight="0.4"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_logo"
+
+                    tools:ignore="NestedWeights" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
 
 
         </LinearLayout>

@@ -16,6 +16,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
     buildTypes {
@@ -23,6 +24,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
     }
 }
 
@@ -69,6 +74,13 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
 //    implementation 'com.google.android.gms:play-services-vision:17.0.2'
 
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.andkulikov:transitionseverywhere:1.7.4'
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+    implementation 'com.github.Q42:AndroidScrollingImageView:1.2'
 }
 
 apply plugin: 'com.google.gms.google-services'
