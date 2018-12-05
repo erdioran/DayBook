@@ -24,7 +24,7 @@ import android.support.annotation.ColorRes;
 
 public class LoginActivity extends AppCompatActivity {
 
-    @BindViews(value = {R.id.logo,R.id.first,R.id.second,R.id.last})
+    @BindViews(value = {R.id.logo})
     protected List<ImageView> sharedElements;
 
     @Override

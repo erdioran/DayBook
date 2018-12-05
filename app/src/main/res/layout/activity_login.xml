@@ -39,42 +39,6 @@
 
 
 
-    <ImageView
-        android:src="@drawable/facebook"
-        android:layout_width="@dimen/option_size"
-        android:layout_height="@dimen/option_size"
-        android:id="@+id/first"
-        app:layout_constraintRight_toLeftOf="@+id/second"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:src="@drawable/linkedin"
-        android:layout_width="@dimen/option_size"
-        android:layout_height="@dimen/option_size"
-        android:id="@+id/second"
-        app:layout_constraintLeft_toRightOf="@+id/first"
-        app:layout_constraintRight_toLeftOf="@+id/last"
-        app:layout_constraintTop_toTopOf="@+id/first"
-        app:layout_constraintBottom_toBottomOf="@+id/first"
-        app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:src="@drawable/twitter"
-        android:id="@+id/last"
-        android:layout_width="@dimen/option_size"
-        android:layout_height="@dimen/option_size"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/second"
-        app:layout_constraintBottom_toBottomOf="@+id/second"
-        app:layout_constraintTop_toTopOf="@+id/second"
-        app:layout_constraintVertical_bias="1.0"
-        android:contentDescription="@string/todo" />
-
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"

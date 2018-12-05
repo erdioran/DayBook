@@ -26,6 +26,7 @@ import android.annotation.TargetApi;
 import android.support.annotation.Nullable;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 
 import java.util.List;
 
@@ -33,6 +34,8 @@ import butterknife.BindViews;
 import butterknife.ButterKnife;
 
 public class LogInFragment extends AuthFragment{
+    @BindViews(value = {R.id.first,R.id.second,R.id.last})
+    protected List<ImageView> sharedElements;
 
     @BindViews(value = {R.id.email_input_edit,R.id.password_input_edit})
     protected List<TextInputEditText> views;

@@ -21,11 +21,16 @@ import android.view.View;
 import java.util.List;
 import android.support.annotation.Nullable;
 import android.annotation.TargetApi;
+import android.widget.ImageView;
+
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 
 
 public class SignUpFragment extends AuthFragment{
+
+    @BindViews(value = {R.id.first,R.id.second,R.id.last})
+    protected List<ImageView> sharedElements;
 
     @BindViews(value = {R.id.email_input_edit,
             R.id.password_input_edit,
