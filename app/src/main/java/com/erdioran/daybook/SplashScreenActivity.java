@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.erdioran.daybook.Helper.NetworkCheck;
 import com.erdioran.daybook.StartLogin.LoginActivity;
-import com.erdioran.daybook.StartLogin.StartActivity;
+
 
 import java.util.Timer;
 import java.util.TimerTask;
